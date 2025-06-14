@@ -1,0 +1,19 @@
+.product-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.product {
+  text-align: center;
+  width: 200px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.emoji {
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+}
