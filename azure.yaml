@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: js-ai-build-a-thon
+metadata:
+    template: azd-init@1.17.0
+services:
+    js-ai-build-a-thon:
+        project: .
+        host: containerapp
+        language: js
+resources:
+    js-ai-build-a-thon:
+        type: host.containerapp
+        port: 80
