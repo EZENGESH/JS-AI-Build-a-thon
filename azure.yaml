@@ -1,14 +1,16 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
 
-name: js-ai-build-a-thon
+name: vite-chat-interface
 metadata:
-    template: azd-init@1.17.0
+    template: azd-init@1.14.0
 services:
-    js-ai-build-a-thon:
-        project: .
-        host: containerapp
+    webapp:
+        project: packages/webapp
+        host: staticwebapp
         language: js
-resources:
-    js-ai-build-a-thon:
-        type: host.containerapp
-        port: 80
+        dist: dist
+        
+    webapi:
+        project: packages/webapi
+        host: appservice
+        language: js
